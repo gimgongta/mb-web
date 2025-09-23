@@ -4,5 +4,9 @@ type TextComponentProps = {
 };
 
 export default function TextComponent({ text, style }: TextComponentProps) {
-  return <div style={style}>{text}</div>;
+  return (
+    <div style={style}>
+      <p className="text-text">{text}</p>
+    </div>
+  );
 }
